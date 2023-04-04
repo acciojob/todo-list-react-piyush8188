@@ -16,7 +16,7 @@ jobs:
           ls ${{ github.workspace }}
       - name: Acciojob Assignment Action
         id: assignmentAction
-        uses: piyush8188/testing-assignment-action@v1.4
+        uses: piyush8188/testing-assignment-action@v1.5
         env:
           ACCIO_ASGMNT_ACTION_TOKEN: ${{ secrets.ACCIO_ASGMNT_ACTION_TOKEN }}
       - run: echo "🍏 Score - ${{ steps.assignmentAction.outputs.scoreReceived }}/${{ steps.assignmentAction.outputs.totalScore }}"
